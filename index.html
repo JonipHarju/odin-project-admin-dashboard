@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="gridMain" id="header">
+        <div class="topRow">
+          <div id="searchBarContainer">
+            <svg
+              id="searchIcon"
+              style="width: 32px; height: 32px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+              />
+            </svg>
+            <div id="searchBar"></div>
+          </div>
+          <div id="userIconAndName">
+            <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"
+              />
+            </svg>
+            <p id="userName">Joniboi epicMan!</p>
+          </div>
+        </div>
+        <div class="bottomRow">
+          <div id="user">
+            <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"
+              />
+            </svg>
+            <p id="userName">Joniboi epicMan! (@Joni Harju)</p>
+          </div>
+          <div id="buttonWrapper">
+            <button class="headerButton">New</button
+            ><button class="headerButton">Upload</button
+            ><button class="headerButton">Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="gridMain" id="sidebar">
+        <div class="sidebarElement" id="dashBoardTitle">
+          <svg
+            class="dashboardIcon"
+            style="width: 24px; height: 24px"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12.04,2.5L9.53,5H14.53L12.04,2.5M4,7V20H20V7H4M12,0L17,5V5H20A2,2 0 0,1 22,7V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V7A2,2 0 0,1 4,5H7V5L12,0M7,18V14H12V18H7M14,17V10H18V17H14M6,12V9H11V12H6Z"
+            />
+          </svg>
+          <h2 id="dashboard">Dashboard</h2>
+        </div>
+        <div class="sidebarListContainer" id="listOneContainer">
+          <ul class="sidebarList" id="sidebarListOne">
+            <li class="listItem" id="listItem1">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
+                />
+              </svg>
+              <p>Home</p>
+            </li>
+            <li class="listItem" id="listItem2">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                />
+              </svg>
+              <p>Profile</p>
+            </li>
+            <li class="listItem" id="listItem3">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"
+                />
+              </svg>
+              <p>Messages</p>
+            </li>
+            <li class="listItem" id="listItem4">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"
+                />
+              </svg>
+              <p>History</p>
+            </li>
+            <li class="listItem" id="listItem5">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z"
+                />
+              </svg>
+              <p>Tasks</p>
+            </li>
+            <li class="listItem" id="listItem6">
+              <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"
+                />
+              </svg>
+              <p>Communities</p>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebarListContainer" id="listTwoContainer">
+          <ul class="sideBarList" id="sidebarListTwo">
+            <li class="listItem" id="list2Item1">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z"
+                />
+              </svg>
+              <p>Settings</p>
+            </li>
+            <li class="listItem" id="list2Item2">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"
+                />
+              </svg>
+              <p>Support</p>
+            </li>
+            <li class="listItem" id="list2Item3">
+              <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M17.13,17C15.92,18.85 14.11,20.24 12,20.92C9.89,20.24 8.08,18.85 6.87,17C6.53,16.5 6.24,16 6,15.47C6,13.82 8.71,12.47 12,12.47C15.29,12.47 18,13.79 18,15.47C17.76,16 17.47,16.5 17.13,17Z"
+                />
+              </svg>
+              <p>privacy</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gridMain" id="projects">
+        <div class="projectsHeaderWrapper">
+          <h3 id="projectsHeader">Your projects</h3>
+        </div>
+        <div class="projectContainer">
+          <div class="card" id="card1">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card2">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card4">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card5">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card6">
+            <h4 class="cardHeader">Minä olen projekti! :D</h4>
+            <p class="cardText">
+              Minusta tuntuu että jossain määrin ihmisillä on hirveästi
+              ennakkoluuloja Lorna Shoresia kohtaan jonka ymmärrän mutta siellä
+              on paljon hienoa substanssia mistä monet musiikin ystävät takuulla
+              nauttisivat!
+            </p>
+            <div class="cardIcons">
+              <div class="iconWrapper" id="icon1">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon2">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"
+                  />
+                </svg>
+              </div>
+              <div class="iconWrapper" id="icon3">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gridMain" id="rightSideCards">
+        <div class="rightSideHeaderWrapper">
+          <h3 class="rightSideHeader">asmdmas!</h3>
+        </div>
+        <div id="rightSideCard1">
+          <h3 id="announcementHeader">Site Maintenance</h3>
+          <p id="announcementText">
+            tässä on tapahtunut jotain aivan mahtavaa mahtavaa ja upeaa upeaa
+            wow!
+          </p>
+          <h3 id="announcementHeader">wow!</h3>
+          <p id="announcementText">
+            ei herran jestas tässähän lukee ! kalam kalam
+          </p>
+          <h3 id="announcementHeader">huh huh!</h3>
+          <p id="announcementText">
+            ei tsiisus maailma pyörii ja elämä jatkuu!
+          </p>
+        </div>
+        <div class="rightSideHeaderWrapper">
+          <h3 class="rightSideHeader">Gulamash!</h3>
+        </div>
+        <div id="rightSideCard2">
+          <div class="rightSideCard2Content">
+            <div class="rightsideCard2Row">
+              <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M21.47 12.43C19.35 14.55 15.82 13.84 15.82 13.84V9.6L3.41 22L2 20.59L14.4 8.18H10.16C10.16 8.18 9.45 4.65 11.57 2.53C13.69 .406 17.23 1.11 17.23 1.11V5.36L17.94 4.65L19.35 6.06L18.64 6.77H22.89C22.89 6.77 23.59 10.31 21.47 12.43Z"
+                />
+              </svg>
+              <p id="rightsideCard2para">pick up your axe soldier!</p>
+            </div>
+            <div class="rightsideCard2Row">
+              <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M21.47 12.43C19.35 14.55 15.82 13.84 15.82 13.84V9.6L3.41 22L2 20.59L14.4 8.18H10.16C10.16 8.18 9.45 4.65 11.57 2.53C13.69 .406 17.23 1.11 17.23 1.11V5.36L17.94 4.65L19.35 6.06L18.64 6.77H22.89C22.89 6.77 23.59 10.31 21.47 12.43Z"
+                />
+              </svg>
+              <p id="rightsideCard2para">pick up your axe soldier!</p>
+            </div>
+
+            <div class="rightsideCard2Row">
+              <svg style="width: 50px; height: 50px" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M21.47 12.43C19.35 14.55 15.82 13.84 15.82 13.84V9.6L3.41 22L2 20.59L14.4 8.18H10.16C10.16 8.18 9.45 4.65 11.57 2.53C13.69 .406 17.23 1.11 17.23 1.11V5.36L17.94 4.65L19.35 6.06L18.64 6.77H22.89C22.89 6.77 23.59 10.31 21.47 12.43Z"
+                />
+              </svg>
+              <p id="rightsideCard2para">pick up your axe soldier!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
